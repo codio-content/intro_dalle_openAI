@@ -1,0 +1,58 @@
+{
+	"type": "multiple-choice",
+	"taskId": "multiple-choice-1434765826",
+	"source": {
+		"name": "prompts for DALL-E",
+		"showName": false,
+		"instructions": "**True or False**: Writing more descriptive prompts for DALL-E will likely generate images that better match your expectations.",
+		"multipleResponse": false,
+		"isRandomized": false,
+		"answers": [
+			{
+				"_id": "ad053b2d-72f3-fcb9-53cb-556623b266f1",
+				"correct": true,
+				"answer": "True"
+			},
+			{
+				"_id": "3ef651a5-2e6c-4db6-329f-86964ee7ad50",
+				"correct": false,
+				"answer": "False"
+			}
+		],
+		"guidance": "Providing more descriptive prompts helps DALL-E better understand the context of the task, allowing it to create more accurate and creative responses. The more precise the explanation, the greater the probability of achieving the desired outcome.",
+		"showGuidanceAfterResponseOption": {
+			"type": "Attempts",
+			"passedFrom": 2
+		},
+		"maxAttemptsCount": 0,
+		"showExpectedAnswer": true,
+		"points": 20,
+		"incorrectPoints": 0,
+		"arePartialPointsAllowed": false,
+		"metadata": {
+			"tags": [
+				{
+					"name": "Assessment Type",
+					"value": "Multiple Choice"
+				}
+			],
+			"files": [
+				"imageGen.py",
+				"image_name.jpg"
+			],
+			"opened": [
+				{
+					"type": "file",
+					"content": "imageGen.py"
+				},
+				{
+					"type": "file",
+					"panelNumber": 1,
+					"content": "image_name.jpg"
+				}
+			]
+		},
+		"bloomsObjectiveLevel": "",
+		"learningObjectives": ""
+	}
+}

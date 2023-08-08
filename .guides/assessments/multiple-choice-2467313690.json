@@ -1,0 +1,68 @@
+{
+	"type": "multiple-choice",
+	"taskId": "multiple-choice-2467313690",
+	"source": {
+		"name": "`n` parameterDALL-E",
+		"showName": false,
+		"instructions": "What is the maximum value for the`n` parameter when generating images with DALL-E?",
+		"multipleResponse": false,
+		"isRandomized": false,
+		"answers": [
+			{
+				"_id": "e7da5e91-c924-4633-1658-249ae42de9b9",
+				"correct": false,
+				"answer": "5"
+			},
+			{
+				"_id": "747a1f99-80a1-1aa0-2822-d6a43ae238d6",
+				"correct": true,
+				"answer": "10"
+			},
+			{
+				"_id": "b990fec6-428b-79bd-a943-682751474538",
+				"correct": false,
+				"answer": "15"
+			},
+			{
+				"_id": "a2b3c08e-b3c9-4f78-3fe9-c4f16394cd36",
+				"correct": false,
+				"answer": "20"
+			}
+		],
+		"guidance": "The `n` parameter in `openai.Image.create()` specifies the number of image variations to generate based on the given text prompt. The maximum value for the `n` parameter is 10, meaning DALL-E can generate up to 10 different image variations at a time.",
+		"showGuidanceAfterResponseOption": {
+			"type": "Attempts",
+			"passedFrom": 2
+		},
+		"maxAttemptsCount": 0,
+		"showExpectedAnswer": true,
+		"points": 20,
+		"incorrectPoints": 0,
+		"arePartialPointsAllowed": false,
+		"metadata": {
+			"tags": [
+				{
+					"name": "Assessment Type",
+					"value": "Multiple Choice"
+				}
+			],
+			"files": [
+				"imageGen.py",
+				"image_name1.jpg"
+			],
+			"opened": [
+				{
+					"type": "file",
+					"content": "imageGen.py"
+				},
+				{
+					"type": "file",
+					"panelNumber": 1,
+					"content": "image_name1.jpg"
+				}
+			]
+		},
+		"bloomsObjectiveLevel": "",
+		"learningObjectives": ""
+	}
+}

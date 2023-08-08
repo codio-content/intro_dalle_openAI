@@ -1,0 +1,62 @@
+{
+	"type": "fill-in-the-blanks",
+	"taskId": "fill-in-the-blanks-712111423",
+	"source": {
+		"name": "Response Dall-E",
+		"showName": false,
+		"instructions": "**Fill in the blank with the right answer:**",
+		"showValues": true,
+		"text": "To access the second image URL from the response, use the following code: `response['data'][<<<1>>>]['url']`",
+		"distractors": "0\n2\n",
+		"guidance": "The response`['data']` is a list containing information about the generated images. Since Python lists are zero-indexed, to access the second image URL, you should use response`['data'][1]['url']`.",
+		"showGuidanceAfterResponseOption": {
+			"type": "Attempts",
+			"passedFrom": 2
+		},
+		"maxAttemptsCount": 0,
+		"showExpectedAnswer": true,
+		"points": 20,
+		"arePartialPointsAllowed": false,
+		"metadata": {
+			"tags": [
+				{
+					"name": "Assessment Type",
+					"value": "Fill in the Blanks"
+				}
+			],
+			"files": [
+				"image_name.jpg",
+				"imageGen.py"
+			],
+			"opened": [
+				{
+					"type": "file",
+					"panelNumber": 1,
+					"content": "image_name.jpg"
+				},
+				{
+					"type": "file",
+					"panelNumber": 1,
+					"content": "image_name.jpg"
+				},
+				{
+					"type": "file",
+					"content": "imageGen.py"
+				}
+			]
+		},
+		"bloomsObjectiveLevel": "",
+		"learningObjectives": "",
+		"tokens": {
+			"blank": [
+				"1"
+			],
+			"text": [
+				"To access the second image URL from the response, use the following code: `response['data'][",
+				0,
+				"]['url']`"
+			],
+			"regexPositions": []
+		}
+	}
+}

@@ -1,0 +1,75 @@
+{
+	"type": "multiple-choice",
+	"taskId": "multiple-choice-1558564085",
+	"source": {
+		"name": "DALL-E API",
+		"showName": false,
+		"instructions": "Which method would you use to generate an image using DALL-E?",
+		"multipleResponse": false,
+		"isRandomized": false,
+		"answers": [
+			{
+				"_id": "a7d96789-0f19-96ba-2b67-20e910304c53",
+				"correct": true,
+				"answer": " `openai.Image.create`"
+			},
+			{
+				"_id": "c102d959-c017-3f68-59e9-4cac50c2947d",
+				"correct": false,
+				"answer": "`openai.Image.generate`"
+			},
+			{
+				"_id": "19e1c05e-1a15-dcec-481f-45ca97e94e11",
+				"correct": false,
+				"answer": "`openai.Text.create`"
+			},
+			{
+				"_id": "921f6939-462b-fc91-43b0-3b5e417d3e99",
+				"correct": false,
+				"answer": "`openai.Image.process`"
+			}
+		],
+		"guidance": "We have to use `openai.Image.create` here is a sample code:\n``` \nresponse = openai.Image.create(\n  prompt=\"a dog smoking a cigar in a poker room.\",\n  n=1,\n  size=\"256x256\"\n)",
+		"showGuidanceAfterResponseOption": {
+			"type": "Attempts",
+			"passedFrom": 2
+		},
+		"maxAttemptsCount": 0,
+		"showExpectedAnswer": true,
+		"points": 20,
+		"incorrectPoints": 0,
+		"arePartialPointsAllowed": false,
+		"metadata": {
+			"tags": [
+				{
+					"name": "Assessment Type",
+					"value": "Multiple Choice"
+				},
+				{
+					"name": "Content",
+					"value": "DALL-E API"
+				},
+				{
+					"name": "Programming Language",
+					"value": "python"
+				}
+			],
+			"files": [
+				"imageGen.py"
+			],
+			"opened": [
+				{
+					"type": "file",
+					"content": "imageGen.py"
+				},
+				{
+					"type": "terminal",
+					"panelNumber": 1,
+					"content": ""
+				}
+			]
+		},
+		"bloomsObjectiveLevel": "",
+		"learningObjectives": ""
+	}
+}

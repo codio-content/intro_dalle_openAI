@@ -1,0 +1,55 @@
+{
+	"type": "code-output-compare",
+	"taskId": "code-output-compare-3247997436",
+	"source": {
+		"name": "creating image gen function",
+		"showName": false,
+		"instructions": "When ready to submit, please click the button below. ",
+		"command": "python ExecTest.py",
+		"preExecuteCommand": "",
+		"options": {
+			"timeout": 30,
+			"ignoreCase": true,
+			"ignoreWhitespaces": true,
+			"ignoreNewline": true,
+			"matchSubstring": false
+		},
+		"guidance": "```\ndef imageGen(prompts):\n  response = openai.Image.create(\n    prompt=prompts,\n    n=1,\n    size=\"256x256\"\n  )\n\n  image_url = response['data'][0]['url']\n  img_data = requests.get(image_url).content\n  with open('my_image.jpg', 'wb') as handler:\n    handler.write(img_data)\nimageGen(\"a cool car on water\")\n```\nThe student is suppose to create a function that takes the prompt as argument. From there, the call the `openai.Image.create` to generate `1` image with a size `256x256` as per the instructions. ",
+		"showGuidanceAfterResponseOption": {
+			"type": "Attempts",
+			"passedFrom": 2
+		},
+		"maxAttemptsCount": 0,
+		"points": 20,
+		"showExpectedAnswer": true,
+		"arePartialPointsAllowed": false,
+		"sequence": [
+			{
+				"arguments": "",
+				"input": "",
+				"output": "Test passed!\n",
+				"showFeedback": false,
+				"feedback": ""
+			}
+		],
+		"metadata": {
+			"tags": [
+				{
+					"name": "Assessment Type",
+					"value": "Standard Code Test"
+				}
+			],
+			"files": [
+				"exerc.py"
+			],
+			"opened": [
+				{
+					"type": "file",
+					"content": "exerc.py"
+				}
+			]
+		},
+		"bloomsObjectiveLevel": "",
+		"learningObjectives": ""
+	}
+}
